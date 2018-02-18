@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- PAGE settings -->
+  <link rel="icon" href="https://templates.pingendo.com/assets/Pingendo_favicon.ico">
+  <title>Calcutta Foodies Club </title>
+  <meta name="description" content="Free Bootstrap 4 Pingendo Aquamarine template for unique events.">
+  <meta name="keywords" content="Pingendo conference event aquamarine free template bootstrap 4">
+  <!-- CSS dependencies -->
+  <link rel="stylesheet" href="aquamarine.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+  <!-- Script: Make my navbar transparent when the document is scrolled to top -->
+  <script src="js/navbar-ontop.js"></script>
+  <!-- Script: Animated entrance -->
+  <script src="js/animate-in.js"></script>
+  <!--Slide-->
+  <script src="js/jquery-2.1.3.min.js"></script>
+    <script src="js/cycle2.js"></script>
+  <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css" />
+ 
+		<style type="text/css">
+	*{
+		margin:0;
+		padding:0;
+	}
+	#container {
+		width:100%;
+		position:relative;s
+		}
+	#slideshow {
+		height:100%;
+		width:100%;
+		}
+	#slideshow img {
+		height:100%;
+		width:100%;
+		position: absolute;
+		z-index:10;
+		min-width:100%;
+		min-height:100%;
+		}
+	#pager {
+		height:120px; 
+		width:100%;
+		background:rgba(0,0,0,0.5);
+		position:absolute;
+		bottom:5%;
+		z-index:1000;
+		text-align:center;
+		opacity:0;
+		transition:all .2s ease-in-out 0s;
+		}
+	#pager:hover {
+		opacity:1;
+		}
+	#pager img {
+		margin: 10px 5px;
+		opacity:0.3;
+		transition:all .3s ease-in-out 0s;
+		}
+	#pager img:hover {
+		opacity:1;
+		transform:scale(1.05);
+		z-index:100;
+		}
+	#prev_c {
+		height:100%;
+		width:200px;
+		position:absolute;
+		left:0;
+		top:0;
+		z-index:100;
+		}
+		#prev_c img {
+			height:120px;
+			width:120px;
+			position:absolute;
+			top:0;
+			bottom:0;
+			left:0;
+			margin:auto 0px;
+			}
+		
+	#next_c {
+		height:100%;
+		width:200px;
+		position:absolute;
+		right:0;
+		top:0;
+		z-index:100;
+		}
+		#next_c img {
+			height:120px;
+			width:120px;
+			position:absolute;
+			top:0;
+			bottom:0;
+			right:0;
+			margin:auto 0px;
+			}
+		#next #prev { visibility:hidden;}
+		#next,#prev:hover {
+			cursor:pointer;
+			}
+		#next_c,#prev_c:hover #next,#prev { visibility:visible;}
+		
+	</style>
+	</head>
+
+<body class="text-center">
+
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-md fixed-top bg-dark navbar-dark">
+    <div class="container">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar2SupportedContent" aria-controls="navbar2SupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+      <!--<div class="collapse navbar-collapse justify-content-center" id="navbar2SupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item mx-2">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link" href="#speakers">Speakers</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link" href="#schedule">Schedule</a>
+          </li>
+        </ul>
+        <a class="btn navbar-btn mx-2 text-white btn-outline-light" href="#register">Register now</a>
+      </div>-->
+    </div>
+  </nav>
+  <!-- Cover -->
+  
+  <div class="d-flex align-items-center section-aquamarine py-5 cover" style="background-image: url(&quot;assets/conference/cover.jpg&quot;);">
+  <!--<div class="img" style="background-image: url(&quot;assets/conference/cover.jpg&quot;);">-->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-white mt-5">
+		<!--Adding the cfc logo-->
+		<img src="assets/conference/cfc-logo-transparent.png"  width="500">
+		<!-- Adding the date-->
+		<p style="font-size:150%;font-family: verdana" >Fraternity | Philanthropy | Advocacy</p>
+		<p>
+		<script> document.write(new Date().toLocaleDateString()); </script>
+		</p>
+          
+          <a href="#register" class="btn btn-lg mt-4 btn-outline-light">Register now</a><i class="d-block fa fa-angle-down pt-5 fa-3x"></i> </div>
+      </div>
+    </div>
+  </div>
+  
+  <!--Start Main-->
+<div id="container">
+ 
+
+ <div id="slideshow" class="cycle-slideshow" 
+ data-cycle-fx="fade" 
+ data-cycle-manual-fx="scrollHorz" 
+ data-cycle-pager-fx = "fade" 
+ data-cycle-manual-speed="400"
+ data-cycle-prev="#prev"  	
+ data-cycle-next="#next"
+ data-cycle-speed="600"  
+ data-cycle-timeout="3000" 
+ data-cycle-pager = "#pager" 
+ data-cycle-pager-template="<a href='#'><img src='{{src}}' width=150 height=100
+ ></a>"
+     > 
+      
+        <img src="img/1.jpg" id="intro_img"/>
+        <img src="img/2.jpg" id="intro_img"/>
+        <img src="img/3.jpg" id="intro_img"/>
+         <img src="img/4.jpg" id="intro_img"/>
+         <img src="img/5.jpg" id="intro_img"/>
+         <img src="img/6.jpg" id="intro_img"/>
+         <img src="img/7.jpg" id="intro_img"/>
+		 <img src="img/8.jpg" id="intro_img"/>
+        </div>
+
+        <div id="pager"></div>
+        
+        <div id="prev_c"><img id="prev" src="img/prev1.svg"/></div>
+        <div id="next_c"><img id="next" src="img/next1.svg"/></div>
+</div>
+
+<script type="text/javascript">
+
+function height() {
+	var h = window.innerHeight;
+	var a = document.getElementById('container');
+	a.style.height = h+"px";
+	}
+	
+window.addEventListener('load',height);
+window.addEventListener('resize',height);
+</script>
+
+
+<!--End Main -->
+  <!-- Parallax section -->
+  <div class="py-5 section-parallax" style="background-image: url(&quot;assets/conference/venue.jpg&quot;);">
+    <div class="container my-5 bg-light p-4">
+      <div class="row mx-auto">
+        <div class="col-md-12">
+          <h1 class="mb-3">Who We Are</h1>
+          <p class="">Calcutta Foodies Club was founded on 12th August, 2014 by Dr. Agniva Chakraborty.
+ 
+
+We, Calcutta Foodies Club, are a non-profit organization based in Kolkata, India. We are primarily active in Facebook where member count is about 100,000. Such a huge number of people from different backgrounds are bonded only by their love for food and related activities. From simple food lover to cooking enthusiast to professional chef and restaurant owner, everyone uses this common platform to exchange information, experience and opinion. Besides our virtual activities, we frequently organize meets and events to promote the offline interaction between members.
+
+We take immense interest in various social welfare activities since inception. Our members are always eager to help the underprivileged people of our society. We have organized several events to reach out and support them. We also facilitate advocacy initiatives and awareness generation programmes.</p>
+          <!--<a href="#schedule" class="btn btn-outline-primary btn-lg m-2">Schedule</a>
+          <a class="btn btn-primary btn-lg m-2" href="#register">Register</a>-->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Speakers -->
+  <div class="py-5 bg-light" id="speakers">
+  <div class="py-5 bg-light" id="speakers">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <h1>Team CFC</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-6 col-lg-4 animate-in-left">
+          <a href="#">
+            <img src="assets/conference/people_1.jpg" class="center-block img-fluid my-3 rounded-circle" width="300">
+            <h3 class="mb-0"><b>Agniva Chakraborty</b></h3>
+            <p class="text-muted">Creator</p>
+          </a>
+        </div>
+        <div class="col-6 col-lg-4">
+          <a href="#">
+            <img src="assets/conference/people_2.jpg" class="center-block img-fluid my-3 rounded-circle" width="300">
+            <h3 class="mb-0"><b>Ashique Firdous</b></h3>
+            <p class="text-muted">Moderator</p>
+          </a>
+        </div>
+        <div class="col-6 col-lg-4 animate-in-right">
+          <a href="#">
+            <img src="assets/conference/people_3.jpg" class="center-block img-fluid my-3 rounded-circle" width="300">
+            <h3 class="mb-0"><b>Chandan Gupta</b></h3>
+            <p class="text-muted">Moderator</p>
+          </a>
+        </div>
+        <div class="col-6 col-lg-4 animate-in-left">
+          <a href="#">
+            <img src="assets/conference/people_4.jpg" class="center-block img-fluid my-3 rounded-circle" width="300">
+            <h3 class="mb-0"><b>Dana Choudhuri</b></h3>
+            <p class="text-muted">Admin</p>
+          </a>
+        </div>
+        <div class="col-6 col-lg-4">
+          <a href="#">
+            <img src="assets/conference/people_5.jpg" class="center-block img-fluid my-3 rounded-circle" width="300">
+            <h3 class="mb-0"><b>Sagar Sen</b></h3>
+            <p class="text-muted">Moderator</p>
+          </a>
+        </div>
+        <div class="col-6 mask col-lg-4 animate-in-right">
+          <a href="#">
+            <img src="assets/conference/people_6.jpg" class="center-block img-fluid my-3 rounded-circle" width="300">
+            <h3 class="mb-0"><b>Arnab Guha</b></h3>
+            <p class="text-muted">Moderator</p>
+          </a>
+        </div>
+		<div class="col-6 col-lg-4 animate-in-right">
+          <a href="#">
+            <img src="assets/conference/people_7.jpg" class="center-block img-fluid my-3 rounded-circle" width="300">
+            <h3 class="mb-0"><b>Supratim Sarkar</b></h3>
+            <p class="text-muted">Moderator</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Schedule -->
+  <div class="py-5 section-parallax" style="background-image: url(&quot;assets/conference/schedule.jpg&quot;);" id="schedule">
+    <div class="container section-aquamarine">
+      <div class="row">
+        <div class="col-md-12">
+          <h1 class="text-white mt-4">Upcoming Events</h1>
+        </div>
+      </div>
+      <div class="row text-left text-dark">
+        <div class="p-4 col-lg-4 col-md-6">
+          <div class="card">
+            <div class="card-block text-center card-primary p-2">
+              <h2>4th March</h2>
+             </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item"><b>AN EMERGENCY ANNOUNCEMENT
+
+Just received the information that the Steamer we booked for Eklaakhi Jolobihaar on 25th February 2018 is facing technical issues. Authority wants to cancel our booking citing technical and security problems . They are unable to provide any other steamer on the same day. The only option they provided us is o change the date to 4th March. 
+
+In this scenario, we are being compelled to change the date of Eklaakhi Jolobihaar to 4th March. We assure full refund to those who will not be able to attend on 4th March.
+
+Any inconvenience caused thereby is sincerely regreted.</b></li>
+            </ul>
+          </div>
+        </div>
+       
+        
+      </div>
+    </div>
+  </div>
+  <!-- Sponsor logos -->
+  
+  <!-- Call to action -->
+  <div class="py-5 section-aquamarine" id="register">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 text-md-left text-center">
+          <h1 class="text-white">Registrations</h1>
+          <p>Hi.&nbsp;
+            <br>Events.</p>
+        </div>
+        <div class="col-md-4 align-self-center animate-in-right">
+          <a href="#" class="btn btn-lg btn-light my-3">Register now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Footer -->
+  <footer class="text-md-left text-center p-4 bg-dark text-light">
+    <div class="container">
+      <div class="row">
+        <div class="my-3 col-lg-4 col-md-6">
+          <h3>Calcutta Foodies Club</h3>
+          <p class="text-muted">
+		<script> document.write(new Date().toLocaleDateString()); </script>
+		</p>
+          
+          <a class="btn btn-lg btn-primary" href="#">Register now</a>
+        </div>
+        <div class="my-3 col-lg-4 col-md-6">
+          <h3>Contact us</h3>
+          <!--<form>
+            <fieldset class="form-group my-3">
+              <input type="email" class="form-control" id="Input Email" placeholder="Email"> </fieldset>
+            <fieldset class="form-group my-3">
+              <input type="message" class="form-control" id="Input Message" placeholder="Message"> </fieldset>
+            <button type="submit" class="btn btn-outline-primary">Submit</button>
+          </form>-->
+        </div>
+        <div class="col-lg-1"> </div>
+        <div class="my-3 col-lg-3">
+          <h3>Follow</h3>
+          <a href="https://www.facebook.com" target="blank"><i class="fa fa-facebook-square text-muted fa-3x m-2"></i></a>
+          <a href="https://www.instagram.com" target="blank"><i class="fa fa-3x fa-instagram text-muted m-2"></i></a>
+          <a href="https://twitter.com" target="blank"><i class="fa fa-3x fa-twitter m-2 text-muted"></i></a>
+          <a href="https://plus.google.com" target="blank"><i class="fa fa-3x fa-google-plus-official text-muted m-2"></i></a>
+          <a href="https://pinterest.com" target="blank"><i class="fa fa-3x text-muted fa-pinterest-p m-2"></i></a>
+          <a href="https://www.youtube.com" target="blank"><i class="fa fa-3x text-muted fa-youtube-play m-2"></i></a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <p class="text-muted">Hello  </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- JavaScript dependencies -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <!-- Script: Smooth scrolling between anchors in a same page -->
+  <script src="js/smooth-scroll.js"></script>
+</body>
+
+</html>
