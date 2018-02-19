@@ -461,14 +461,14 @@ pre {
     font-size: inherit;
     color: inherit;
     word-break: normal; }
-	
+@media (min-width: 576px) {	
 .center {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
 }
-
+}
 .pre-scrollable {
   max-height: 340px;
   overflow-y: scroll; }
