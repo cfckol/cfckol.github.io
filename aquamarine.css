@@ -492,6 +492,28 @@ pre {
   @media (min-width: 1200px) {
     .container {
       max-width: 960px; } }
+	  
+!added for whoweare
+.containerare {
+  width: 80%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto; }
+
+  
+  @media (min-width: 576px) {
+    .containerare {
+      max-width: 540px; } }
+  @media (min-width: 768px) {
+    .containerare {
+      max-width: 720px; } }
+  @media (min-width: 992px) {
+    .containerare {
+      max-width: 960px; } }
+  @media (min-width: 1200px) {
+    .containerare {
+      max-width: 960px; } }
 
 .container-fluid {
   width: 100%;
