@@ -466,17 +466,24 @@ pre {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    }}
+    }
+}
 .pre-scrollable {
   max-height: 340px;
   overflow-y: scroll; }
 
-.container {
+  .container1 {
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto; }
+  
+.container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto; }
+  
   @media (min-width: 576px) {
     .container {
       max-width: 540px; } }
@@ -6138,6 +6145,7 @@ body > * {
   color: white;
   background-size: cover;
   background-position: center; }
+  
   .section-aquamarine:before {
     position: absolute;
     top: 0px;
