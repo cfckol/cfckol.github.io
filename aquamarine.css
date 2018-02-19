@@ -461,6 +461,13 @@ pre {
     font-size: inherit;
     color: inherit;
     word-break: normal; }
+	
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
 
 .pre-scrollable {
   max-height: 340px;
@@ -517,6 +524,10 @@ pre {
   min-height: 1px;
   padding-right: 15px;
   padding-left: 15px; }
+  
+ .col-img {
+	 align-content: center;
+ }
 
 .col {
   flex-basis: 0;
