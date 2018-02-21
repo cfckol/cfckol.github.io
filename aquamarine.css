@@ -10,6 +10,44 @@
  * Copyright 2011-2018 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+ 
+ /*Added for logo and sider by Sauparna*/
+ .sliderimg {
+    display: inline-block;
+    width: 25%;
+    height: auto;
+}
+
+@media (max-width: 600px) {
+  .sliderimg {
+    width: 100%;
+  }
+}
+ .main-text
+{
+    position: absolute;
+    top: 50px;
+    width: 96.66666666666666%;
+    color: #FFF;
+}
+.btn-min-block
+{
+    min-width: 170px;
+    line-height: 26px;
+}
+.btn-clear
+{
+    color: #FFF;
+    background-color: transparent;
+    border-color: #FFF;
+    margin-right: 15px;
+}
+.btn-clear:hover
+{
+    color: #000;
+    background-color: #FFF;
+}
+ /*Sauparna*/
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -5038,7 +5076,7 @@ button.bg-dark:focus {
 
 .mt-5,
 .my-5 {
-  margin-top: 4.5rem !important; }
+  margin-top: 6rem !important; }
 
 .mr-5,
 .mx-5 {
@@ -6158,11 +6196,17 @@ body > * {
 .shadowed {
   box-shadow: 0px 0px 5px #555; }
 
-.section-aquamarine {
+.section-aquamarine1 {
   position: relative;
   color: white;
   background-size: cover;
   background-position: center; }
+  
+  .section-aquamarine {
+  position: relative;
+  color: white;
+  background-size: cover;
+   }
   
   .section-aquamarine:before {
     position: absolute;
