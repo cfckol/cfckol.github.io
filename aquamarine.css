@@ -155,8 +155,7 @@ article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, s
 
 body {
 	
-  overflow-y: scroll;
-  overflow-x: hidden;
+overflow:hidden;
   margin: 0;
   font-family: Roboto;
   font-size: 1rem;
@@ -6183,6 +6182,7 @@ a.text-dark:hover, a.text-dark:focus {
   @page {
     size: a3; }
   body {
+	  overflow:hidden;
     min-width: 992px !important; }
   .container {
     min-width: 992px !important; }
@@ -6233,6 +6233,7 @@ a.text-dark:hover, a.text-dark:focus {
   color: #fff; }
 
 html, body {
+	overflow:hidden;
   height: 100%; }
 
 body > * {
