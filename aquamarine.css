@@ -14,6 +14,16 @@
  
  /*nav style Sauparna*/
  
+.menu-css
+{
+color:white;
+font-size:200%;
+font-family:arial, helvetica, sans-serif;
+}
+
+
+ .navbar-default { border-color: transparent;}
+ 
 .main_section_agile {
     position: absolute;
     z-index: 999;
