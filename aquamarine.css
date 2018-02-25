@@ -14,11 +14,14 @@
  
  /*nav style Sauparna*/
  
- .menu
-{
-	padding-top: 3rem !important; 
+.main_section_agile {
+    position: absolute;
+    z-index: 999;
+    width: 100%;
 }
-
+.agileits_w3layouts_banner_nav{
+	padding: .5em;
+}
   
   
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
@@ -75,7 +78,7 @@ video
  .main-text
 {
     position: absolute;
-    top: 20px;
+    top: 100px;
     width: 96.66666666666666%;
     color: #FFF;
 }
@@ -155,7 +158,7 @@ article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, s
 
 body {
 	
-overflow:hidden;
+  overflow-x:hidden;
   margin: 0;
   font-family: Roboto;
   font-size: 1rem;
@@ -6182,7 +6185,7 @@ a.text-dark:hover, a.text-dark:focus {
   @page {
     size: a3; }
   body {
-	  overflow:hidden;
+
     min-width: 992px !important; }
   .container {
     min-width: 992px !important; }
@@ -6233,7 +6236,7 @@ a.text-dark:hover, a.text-dark:focus {
   color: #fff; }
 
 html, body {
-	overflow:hidden;
+
   height: 100%; }
 
 body > * {
