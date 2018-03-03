@@ -16,11 +16,13 @@ body {
 	font-weight: 300;
     color: #666;
     background-color: #fff;
+	overflow-x:hidden;
 }
 
 html {
     width: 100%;
     height: 100%;
+	overflow-x:hidden;
 }
 
 h1,
