@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
   <!--carousel-->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -32,41 +32,44 @@
 
   </head>
 
-<body class="text-center">
+<body class="text-center" data-target=".navbar-custom">
 
   <!-- Cover -->
   <!--Start Main-->
   <!-- Latest compiled and minified CSS -->
 <!-- banner -->
-<div class="main_section_agile" id="home">
-	<div class="container">
-		<div class="agileits_w3layouts_banner_nav">
-			<nav class="navbar navbar-expand-md navbar-default">
-				<div class="navbar-header navbar-left">
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					
-				</div>
-				<!-- Collect the nav links, forms, and other content for toggling -->
-				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-					<nav>
-						<ul class="nav navbar-nav">
-							<li><a style="color:white" class="menu-css" href="index.html">Home</a></li>
-							<li><a style="color:white" class="menu-css" href="index.html">Blog</a></li>
-							<li><a style="color:white" class="menu-css" href="whoweare">Know About Us</a></li>
-							<li><a style="color:white" class="menu-css" href="Social_activities.html">Social Activities</a></li>
-							<li><a style="color:white" class="menu-css" href="index.html">Archive</a></li>
-							<li><a style="color:white" class="menu-css" href="#contacts">Contact Us</a></li>
-						</ul>
-					</nav>
-				</div>
-			</nav>
-		</div>
-	</div>
-</div>
+<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header page-scroll">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+        <a class="navbar-brand" href="index.html">
+          <h1>SQUAD FREE</h1>
+        </a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#intro">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#service">Service</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Example menu</a></li>
+              <li><a href="#">Example menu</a></li>
+              <li><a href="#">Example menu</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+  </nav>
 <!-- banner -->
   
  <div class="row">		
@@ -107,8 +110,7 @@
 We, Calcutta Foodies Club, are a non-profit organization based in Kolkata, India. We are primarily active in Facebook where member count is about 100,000. Such a huge number of people from different backgrounds are bonded only by their love for food and related activities. From simple food lover to cooking enthusiast to professional chef and restaurant owner, everyone uses this common platform to exchange information, experience and opinion. Besides our virtual activities, we frequently organize meets and events to promote the offline interaction between members.
 
 We take immense interest in various social welfare activities since inception. Our members are always eager to help the underprivileged people of our society. We have organized several events to reach out and support them. We also facilitate advocacy initiatives and awareness generation programmes.</p>
-          <!--<a href="#schedule" class="btn btn-outline-primary btn-lg m-2">Schedule</a>
-          <a class="btn btn-primary btn-lg m-2" href="#register">Register</a>-->
+ 
         </div>
       </div>
     </div>
