@@ -3,7 +3,6 @@
 * Based on: Bootstrap v4.0.0 (https://getbootstrap.com)
 * Copyright 2014-2018 Pingendo (https://pingendo.com)
 */
-@import url("https://fonts.googleapis.com/css?family=Roboto:200,300,400");
 /*!
  * Bootstrap v4.0.0 (https://getbootstrap.com)
  * Copyright 2011-2018 The Bootstrap Authors
@@ -21,49 +20,11 @@ font-size:200%;
 font-family:arial, helvetica, sans-serif;
 }
 
-
- 
-.main_section_agile {
-    position: absolute;
-    z-index: 999;
-    width: 100%;
-}
-.agileits_w3layouts_banner_nav{
-	padding: .5em;
-}
   
   
-@import url(https://fonts.googleapis.com/css?family=Open+Sans);
-/*
-nav ul li {
-  display: inline-block;
-}
 
-nav ul li a {
-  padding: 8px;
-  font-family: "Open Sans";
-  text-transform:uppercase;
-  color: rgb(255,255,255);
-  font-size: 18px;
-  text-decoration: none;
-  text-align: center;
-  display: block;
-}
 
-nav ul li a:hover {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  background: rgba(255, 255, 255, 0.1);
-  color: rgba(0, 35, 122, 0.5);
-}
-/*
-@media (max-width: 600px) {
-  nav ul li a {
-  display: none;
-}
-}*/
-/*end nav style*/
- 
- /*Sauparna video 1*/
+
 video
 {
     width: 100%;
@@ -84,12 +45,11 @@ video
     width: 100%;
   }
 }
- .main-text
+ .maintext
 {
+	
     position: absolute;
-    top: 50px;
-    width: 96.66666666666666%;
-    color: #FFF;
+	top:150px;
 }
 .btn-min-block
 {
@@ -286,6 +246,7 @@ figure {
 
 img {
   vertical-align: middle;
+  
   border-style: none; }
 
 svg:not(:root) {
@@ -5909,17 +5870,9 @@ body > * {
 
 .shadowed {
   box-shadow: 0px 0px 5px #555; }
-
-.section-aquamarine1 {
-  position: relative;
-  /*color: white;*/
-  background-size: cover;
-  background-position: center; }
   
   .section-aquamarine {
-  position: relative;
-  /*background-size: cover;*/
-  
+  position: relative;  
    }
   
   .section-aquamarine:before {
