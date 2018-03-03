@@ -34,9 +34,9 @@ video
   }
 }
  .maintext
-{
-	
+{	
     position: absolute;
+	top: 60px;
 }
 .btn-min-block
 {
